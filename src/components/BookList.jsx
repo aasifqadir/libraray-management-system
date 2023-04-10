@@ -22,7 +22,7 @@ const BookList = () => {
         // alert(`${title} is deleted succesfully`)
     }
     let readBook = (id) => {
-        if (location.pathname == '/admin/book-list') {
+        if (location.pathname === '/admin/book-list') {
             navigate(`/admin/book-list/${id}`)
         } else {
             navigate(`/user/book-list/${id}`)
@@ -42,7 +42,7 @@ const BookList = () => {
                         <h5>Year : {data.year}</h5>
                         <div className="book-details-btn">
                             <button onClick={() => readBook(data.id)} id="lnk">Read Book</button>
-                            {location.pathname == '/admin/book-list' && <button onClick={() => deleteBook(data.id)}> Delete</button >}
+                            {location.pathname === '/admin/book-list' && <button onClick={() => deleteBook(data.id)}> Delete</button >}
                         </div>
                     </div >
                 )
