@@ -1,0 +1,28 @@
+.read-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial;
+    /* height: 100vh; */
+    background-color: #ccc;
+
+}
+
+.read-book span {
+    width: 550px;
+    font-size: 35px;
+    background-color: #3c46ce;
+    color: #FFFFFF;
+    border: 1px solid #3c46ce;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.read-book p {
+    /* border: 1px solid #949292; */
+    padding: 20px;
+    height: 100%;
+}
