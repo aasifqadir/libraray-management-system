@@ -11,14 +11,12 @@ const AdminLogin = () => {
 
     let submit = (e) => {
         e.preventDefault()
-        navigate('/admin')
+        if (email.current.value == "admin@gmail.com" && password.current.value == 12345) {
+            navigate('/admin')
 
-        // if (email.current.value == "admin@gmail.com" && password.current.value == 12345) {
-        //     navigate('/admin')
-
-        // } else {
-        //     alert("invalid Credential")
-        // }
+        } else {
+            alert("invalid Credential")
+        }
     }
     return (
         <div>
