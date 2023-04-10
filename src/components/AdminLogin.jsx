@@ -11,7 +11,7 @@ const AdminLogin = () => {
 
     let submit = (e) => {
         e.preventDefault()
-        if (email.current.value == "admin@gmail.com" && password.current.value == 12345) {
+        if (email.current.value === "admin@gmail.com" && password.current.value === 12345) {
             navigate('/admin')
 
         } else {
